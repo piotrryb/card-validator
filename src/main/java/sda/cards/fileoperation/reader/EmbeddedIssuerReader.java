@@ -1,13 +1,11 @@
-package sda.cards.fileoperation;
-
-import sda.cards.fileoperation.reader.IIssuerReader;
+package sda.cards.fileoperation.reader;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class EmbeddedIssuerList implements IIssuerReader {
+public class EmbeddedIssuerReader implements IIssuerReader {
     @Override
     public List<Map<String,String>> readIssuers() {
         List<Map<String,String>> issuersRule = new ArrayList<>();

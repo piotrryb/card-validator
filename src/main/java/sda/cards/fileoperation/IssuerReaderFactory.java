@@ -1,5 +1,6 @@
 package sda.cards.fileoperation;
 
+import sda.cards.fileoperation.reader.EmbeddedIssuerReader;
 import sda.cards.fileoperation.reader.IIssuerReader;
 import sda.cards.fileoperation.reader.TxtIssuerReader;
 
@@ -12,7 +13,7 @@ public class IssuerReaderFactory {
         if (path != null && !path.isEmpty() && path.endsWith(".txt")) {
             issuerReader = new TxtIssuerReader(path);
         } else {
-            issuerReader = new EmbeddedIssuerList();
+            issuerReader = new EmbeddedIssuerReader();
         }
         return issuerReader.readIssuers();
     }
