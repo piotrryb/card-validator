@@ -1,4 +1,4 @@
-package sda.cards.luhn;
+package sda.cards.validation.luhnvalidation;
 
 public class LuhnValidatorImpl implements ILuhnValidator {
     @Override

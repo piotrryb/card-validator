@@ -1,4 +1,4 @@
-package sda.cards.cardvalidation;
+package sda.cards.validation;
 
 public class ValidationResult {
     private String issuer;
@@ -8,7 +8,7 @@ public class ValidationResult {
         return issuer;
     }
 
-    void setIssuer(String issuer) {
+    public void setIssuer(String issuer) {
         this.issuer = issuer;
     }
 
@@ -16,7 +16,7 @@ public class ValidationResult {
         return luhnPassed;
     }
 
-    void setLuhnPassed(boolean luhnPassed) {
+    public void setLuhnPassed(boolean luhnPassed) {
         this.luhnPassed = luhnPassed;
     }
 }

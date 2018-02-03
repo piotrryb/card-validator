@@ -2,14 +2,15 @@ package sda.cards.fileoperation;
 
 import sda.cards.fileoperation.reader.TxtIssuerReader;
 import sda.cards.fileoperation.reader.*;
-import sda.cards.issuers.EmbeddedIssuerList;
 
 public class IssuerReaderFactory {
-    public static IssuerReader createReader(String path) {
-        if (path.endsWith(".txt")) {
-            return new TxtIssuerReader(path);
+    public static IIssuerReader createReader(String path) {
+        IIssuerReader issuerReader;
+        if (path != null && !path.isEmpty() && path.endsWith(".txt")) {
+            issuerReader = new TxtIssuerReader(path);
         } else {
-            return new EmbeddedIssuerList();
+            issuerReader = new EmbeddedIssuerList();
         }
+        return issuerReader;
     }
 }

@@ -1,10 +1,9 @@
 package sda.cards.fileoperation.reader;
 
-import sda.cards.issuers.Issuer;
-
 import java.util.List;
+import java.util.Map;
 
-public abstract class AbstractIssuerReader  implements IssuerReader{
+public abstract class AbstractIssuerReader  implements IIssuerReader {
 
     String pathToFile;
 
@@ -13,6 +12,6 @@ public abstract class AbstractIssuerReader  implements IssuerReader{
     }
 
     @Override
-    public abstract List<Issuer> readIssuers();
+    public abstract List<Map<String,String>> readIssuers();
 
 }

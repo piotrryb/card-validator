@@ -1,7 +1,7 @@
 package sda.cards;
 
 import org.junit.Test;
-import sda.cards.luhn.LuhnValidatorImpl;
+import sda.cards.validation.luhnvalidation.LuhnValidatorImpl;
 
 import static org.junit.Assert.*;
 
