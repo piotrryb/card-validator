@@ -8,7 +8,7 @@ public class ValidationResult {
         return issuer;
     }
 
-    public void setIssuer(String issuer) {
+    void setIssuer(String issuer) {
         this.issuer = issuer;
     }
 
@@ -16,7 +16,7 @@ public class ValidationResult {
         return luhnPassed;
     }
 
-    public void setLuhnPassed(boolean luhnPassed) {
+    void setLuhnPassed(boolean luhnPassed) {
         this.luhnPassed = luhnPassed;
     }
 }

@@ -1,6 +1,6 @@
 package sda.cards.fileoperation.reader;
 
-import sda.cards.issuer.Issuer;
+import sda.cards.issuers.Issuer;
 
 import java.util.List;
 

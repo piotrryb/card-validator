@@ -1,4 +1,4 @@
-package sda.cards.issuer;
+package sda.cards.issuers;
 
 public class Issuer {
     private String issuerName;
@@ -11,15 +11,15 @@ public class Issuer {
         this.numberLength = numberLength;
     }
 
-    public String getIssuerName() {
+    String getIssuerName() {
         return issuerName;
     }
 
-    public String getPrefix() {
+    String getPrefix() {
         return prefix;
     }
 
-    public int getNumberLength() {
+    int getNumberLength() {
         return numberLength;
     }
 }

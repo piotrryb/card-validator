@@ -1,7 +1,7 @@
 package sda.cards.cardvalidation;
 
-import sda.cards.issuer.IIssuerDetector;
-import sda.cards.issuer.IssuerDetectorImpl;
+import sda.cards.issuers.IIssuerDetector;
+import sda.cards.issuers.IssuerDetectorImpl;
 import sda.cards.luhn.ILuhnValidator;
 import sda.cards.luhn.LuhnValidatorImpl;
 

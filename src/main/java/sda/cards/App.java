@@ -14,11 +14,11 @@ public class App
 {
     public static void main( String[] args ) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Wprowadz numer karty");
+        System.out.println("Enter card number");
         String cardNo = scanner.next();
         ICardValidator validator = new SDACardValidator();
         ValidationResult result = validator.validateCardNo(cardNo);
         System.out.println("ISSUER: " + result.getIssuer());
-        System.out.println("LUHN PASSED: " + result.isLuhnPassed());
+        System.out.println("VALIDATION PASSED: " + result.isLuhnPassed());
     }
 }
