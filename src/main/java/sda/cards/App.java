@@ -10,7 +10,7 @@ import java.util.Scanner;
  * Hello world!
  */
 public class App {
-    private static final String PATH_TO_FILE = "C:\\Users\\piotr\\IdeaProjects\\validator\\file.txt";
+    private static final String PATH_TO_FILE = "C:\\Users\\piotr\\IdeaProjects\\validator\\file.csv";
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

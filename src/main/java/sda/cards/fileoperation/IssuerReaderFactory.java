@@ -1,5 +1,6 @@
 package sda.cards.fileoperation;
 
+import sda.cards.fileoperation.reader.CsvIssuerReader;
 import sda.cards.fileoperation.reader.EmbeddedIssuerReader;
 import sda.cards.fileoperation.reader.IIssuerReader;
 import sda.cards.fileoperation.reader.TxtIssuerReader;
@@ -12,6 +13,8 @@ public class IssuerReaderFactory {
         IIssuerReader issuerReader;
         if (path != null && !path.isEmpty() && path.endsWith(".txt")) {
             issuerReader = new TxtIssuerReader(path);
+        } else if (path != null && !path.isEmpty() && path.endsWith(".csv")) {
+            issuerReader = new CsvIssuerReader(path);
         } else {
             issuerReader = new EmbeddedIssuerReader();
         }
